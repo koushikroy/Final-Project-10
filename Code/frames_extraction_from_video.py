@@ -8,7 +8,7 @@ from tqdm import tqdm
 
 # === User-configurable paths ===
 raw_dataset_path   = r'C:\Users\rkous\Downloads\Compressed\1188976'         # folder containing Video_Speech_Actor_XX.zip
-output_dataset_path = r'C:\Users\rkous\OneDrive - Oklahoma A and M System\courses\Spring 25\Deep Learning\Projects\final_project\dataset'  # root for train/val/test folders
+output_dataset_path = r'C:\Users\rkous\OneDrive - Oklahoma A and M System\courses\Spring 25\Deep Learning\Projects\final_project\Final-Project-10\dataset'  # root for train/val/test folders
 
 # === Emotion code → name map ===
 emotion_map = {
