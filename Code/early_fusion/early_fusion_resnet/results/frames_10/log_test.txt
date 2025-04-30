@@ -1,0 +1,13 @@
+2025-04-29 16:21:34,561 ==== TESTING VIDEO MODEL ====
+2025-04-29 16:21:34,561 {'data_root': 'D:\\research\\deep_learning\\dataset', 'model_path': 'D:\\research\\deep_learning\\Final-Project-10\\Code\\early_fusion\\early_fusion_resnet\\results\\frames_10\\best_model.pth', 'num_frames': 10, 'batch_size': 16, 'out_dir': 'D:\\research\\deep_learning\\Final-Project-10\\Code\\early_fusion\\early_fusion_resnet\\results\\frames_10'}
+2025-04-29 16:21:49,820 Test Accuracy: 0.4458
+2025-04-29 16:21:49,820 Confusion Matrix:
+[[ 5  0  0  4  0  0 21  2]
+ [ 0 14  0  0  0  4 14  0]
+ [ 0  0 15  0  0  0 17  0]
+ [ 0  0  0 15  0  0 14  3]
+ [ 0  4  0  7 16  0  2  3]
+ [ 0  0  0  0  0  8  8  0]
+ [ 0  0  0  0  0  0 32  0]
+ [ 0  0  0 24  0  0  6  2]]
+2025-04-29 16:21:50,357 Testing complete.

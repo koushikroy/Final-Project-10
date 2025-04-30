@@ -1,0 +1,5 @@
+D:\research\deep_learning\dataset\test\angry\01-01-05-01-01-01-23: true=angry, pred=sad
+D:\research\deep_learning\dataset\test\angry\01-01-05-01-01-01-24: true=angry, pred=sad
+D:\research\deep_learning\dataset\test\angry\01-01-05-01-01-02-23: true=angry, pred=sad
+D:\research\deep_learning\dataset\test\angry\01-01-05-01-01-02-24: true=angry, pred=fearful
+D:\research\deep_learning\dataset\test\angry\01-01-05-01-02-01-23: true=angry, pred=sad

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Define the path to the processed dataset
-output_dataset_path = r'C:\Users\rkous\OneDrive - Oklahoma A and M System\courses\Spring 25\Deep Learning\Projects\final_project\Final-Project-10\dataset'
+output_dataset_path = r'../../../dataset'
 
 # Define the splits
 splits = ['train', 'val', 'test']
