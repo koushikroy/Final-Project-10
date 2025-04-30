@@ -1,0 +1,66 @@
+(base) D:\research\deep_learning\Final-Project-10\Code\data_processing>python print_train_test_val_stats.py
+Split: train
+Total samples: 2400
+Samples per emotion:
+angry: 320
+calm: 320
+disgust: 320
+fearful: 320
+happy: 320
+neutral: 160
+sad: 320
+surprise: 320
+Samples per actor:
+Actor 01: 120
+Actor 02: 120
+Actor 03: 120
+Actor 04: 120
+Actor 05: 120
+Actor 06: 120
+Actor 07: 120
+Actor 08: 120
+Actor 09: 120
+Actor 10: 120
+Actor 11: 120
+Actor 12: 120
+Actor 13: 120
+Actor 14: 120
+Actor 15: 120
+Actor 16: 120
+Actor 17: 120
+Actor 18: 120
+Actor 19: 120
+Actor 20: 120
+----------------------------------------
+qt.qpa.fonts: Unable to open default EUDC font: "EUDC.TTE"
+Split: val
+Total samples: 240
+Samples per emotion:
+angry: 32
+calm: 32
+disgust: 32
+fearful: 32
+happy: 32
+neutral: 16
+sad: 32
+surprise: 32
+Samples per actor:
+Actor 21: 120
+Actor 22: 120
+----------------------------------------
+Split: test
+Total samples: 240
+Samples per emotion:
+angry: 32
+calm: 32
+disgust: 32
+fearful: 32
+happy: 32
+neutral: 16
+sad: 32
+surprise: 32
+Samples per actor:
+Actor 23: 120
+Actor 24: 120
+----------------------------------------
+✅ Plots have been saved as 'emotion_distribution_[split].png' and 'actor_distribution_[split].png' in the current directory.

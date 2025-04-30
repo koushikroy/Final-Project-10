@@ -1,3 +1,5 @@
+# Naive resizing (224 by 224) and extracting 16 frames from each video in the dataset
+
 import os
 import zipfile
 import shutil
