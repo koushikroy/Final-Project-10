@@ -1,0 +1,4 @@
+2025-04-30 20:41:31,045 ========== TRAINING STARTED ==========
+2025-04-30 20:41:31,045 Parameters: {'data_root': 'D:\\research\\deep_learning\\Final-Project-10\\dataset', 'num_frames': 16, 'epochs': 100, 'batch_size': 16, 'lr': 0.0001, 'wd': 0.0001, 'patience': 20, 'num_workers': 0, 'out_dir': 'D:\\research\\deep_learning\\Final-Project-10\\Code\\early_fusion\\early_fusion_2d_resnet\\results\\frames_16\\augment', 'augment': True}
+2025-04-30 20:41:31,063 Using device: cuda
+2025-04-30 20:41:31,624 ----- Epoch 1/100 -----

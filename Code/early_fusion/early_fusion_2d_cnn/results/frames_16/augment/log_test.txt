@@ -1,0 +1,13 @@
+2025-04-30 20:27:42,531 TESTING EARLY FUSION
+2025-04-30 20:27:42,531 {'data_root': 'D:\\research\\deep_learning\\Final-Project-10\\dataset', 'model_path': 'D:\\research\\deep_learning\\Final-Project-10\\Code\\early_fusion\\early_fusion_2d_cnn\\results\\frames_16\\augment\\best_model.pth', 'num_frames': 16, 'batch_size': 16, 'out_dir': 'D:\\research\\deep_learning\\Final-Project-10\\Code\\early_fusion\\early_fusion_2d_cnn\\results\\frames_16\\augment'}
+2025-04-30 20:27:47,188 Test Accuracy: 0.2833
+2025-04-30 20:27:47,188 Confusion Matrix:
+[[ 0 10 14  4  2  0  0  2]
+ [ 0 19  2  2  2  4  3  0]
+ [ 0  0 28  2  0  0  0  2]
+ [ 0  1 20  4  4  0  1  2]
+ [ 0 14  5  3  6  0  0  4]
+ [ 0  8  0  0  0  8  0  0]
+ [ 0  2 26  0  3  0  1  0]
+ [ 0  7 10  4  6  3  0  2]]
+2025-04-30 20:27:48,110 Testing complete.

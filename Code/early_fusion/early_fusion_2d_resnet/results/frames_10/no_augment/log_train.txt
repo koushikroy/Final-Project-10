@@ -1,0 +1,19 @@
+2025-04-30 20:41:05,654 ========== TRAINING STARTED ==========
+2025-04-30 20:41:05,654 Parameters: {'data_root': 'D:\\research\\deep_learning\\Final-Project-10\\dataset', 'num_frames': 10, 'epochs': 100, 'batch_size': 16, 'lr': 0.0001, 'wd': 0.0001, 'patience': 20, 'num_workers': 0, 'out_dir': 'D:\\research\\deep_learning\\Final-Project-10\\Code\\early_fusion\\early_fusion_2d_resnet\\results\\frames_10\\no_augment', 'augment': False}
+2025-04-30 20:41:05,685 Using device: cuda
+2025-04-30 20:41:06,593 ----- Epoch 1/100 -----
+2025-04-30 20:50:49,006 Train Loss: 0.6886 | Train Acc: 0.7812
+2025-04-30 20:50:49,006  Val Loss: 1.7739 |  Val Acc: 0.4458
+2025-04-30 20:50:49,006 Epoch time: 582.4s
+2025-04-30 20:50:49,202 --> New best model saved (val_acc=0.4458)
+2025-04-30 20:50:49,202 ----- Epoch 2/100 -----
+2025-04-30 21:01:09,340 Train Loss: 0.0900 | Train Acc: 0.9788
+2025-04-30 21:01:09,340  Val Loss: 1.5068 |  Val Acc: 0.4875
+2025-04-30 21:01:09,340 Epoch time: 620.1s
+2025-04-30 21:01:09,559 --> New best model saved (val_acc=0.4875)
+2025-04-30 21:01:09,559 ----- Epoch 3/100 -----
+2025-04-30 21:07:54,417 Train Loss: 0.0702 | Train Acc: 0.9804
+2025-04-30 21:07:54,417  Val Loss: 1.3478 |  Val Acc: 0.5542
+2025-04-30 21:07:54,417 Epoch time: 404.9s
+2025-04-30 21:07:54,590 --> New best model saved (val_acc=0.5542)
+2025-04-30 21:07:54,591 ----- Epoch 4/100 -----

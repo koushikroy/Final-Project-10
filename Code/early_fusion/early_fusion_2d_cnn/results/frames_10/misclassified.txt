@@ -1,5 +1,0 @@
-D:\research\deep_learning\Final-Project-10\dataset\test\calm\02-01-02-02-01-02-22: true=calm, pred=happy
-D:\research\deep_learning\Final-Project-10\dataset\test\fearful\01-01-06-01-01-02-06: true=fearful, pred=sad
-D:\research\deep_learning\Final-Project-10\dataset\test\fearful\01-01-06-01-02-02-06: true=fearful, pred=surprise
-D:\research\deep_learning\Final-Project-10\dataset\test\fearful\02-01-06-01-02-02-06: true=fearful, pred=surprise
-D:\research\deep_learning\Final-Project-10\dataset\test\fearful\02-01-06-02-02-02-22: true=fearful, pred=disgust
