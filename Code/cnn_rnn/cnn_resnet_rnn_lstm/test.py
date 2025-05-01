@@ -110,6 +110,7 @@ def main():
     logging.info(f"Test Accuracy: {acc:.4f}")
     logging.info(f"Confusion Matrix:\n{cm}")
 
+    # Confusion matrix plot
     class_names = list(sorted(test_ds.class_to_idx, key=lambda k: test_ds.class_to_idx[k]))
     fig, ax = plt.subplots(figsize=(8, 6))
     im = ax.imshow(cm, cmap='Blues')
@@ -127,6 +128,17 @@ def main():
     plt.ylabel("True")
     plt.tight_layout()
     plt.savefig(os.path.join(args.out_dir, 'confusion_matrix.png'))
+
+    # Per-class accuracy plot
+    class_acc = cm.diagonal().astype(float) / cm.sum(axis=1)
+    plt.figure(figsize=(8, 6))
+    plt.bar(range(len(class_acc)), class_acc)
+    plt.xticks(range(len(class_acc)), class_names, rotation=45, ha='right')
+    plt.ylabel('Accuracy')
+    plt.xlabel('Class')
+    plt.title('Per-Class Accuracy')
+    plt.tight_layout()
+    plt.savefig(os.path.join(args.out_dir, 'class_accuracy.png'))
 
 if __name__ == '__main__':
     main()
