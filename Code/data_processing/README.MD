@@ -2,6 +2,10 @@
 
 This directory contains scripts for processing and analyzing datasets for the Deep Learning Final Project. The scripts handle tasks such as extracting frames from videos, organizing datasets into train/validation/test splits, and generating statistics and visualizations for the dataset.
 
+Original dataset link: https://zenodo.org/records/1188976
+
+> I have used these codes to to extract frames from the original video dataset. I have included the extracted frames dataset with the repo itself. If you want to start with the original data, then you may download the full data from the given link and run the `frames_extraction_from_video_2.py` to create the extracted frames dataset. Or you may skip this step and just use the provided dataset that I have already attached in this repo that I have extracted from the original video dataset. If you choose to use my provided dataset that has been already uploaded in the repo, then you don't need to run these propeocess code.
+
 ## Contents
 
 ### 1. `frames_extraction_from_video_1.py`
@@ -72,6 +76,3 @@ This directory contains scripts for processing and analyzing datasets for the De
 ## Notes
 - Ensure the raw dataset is properly formatted and matches the expected structure.
 - Modify paths and parameters in the scripts as needed for your specific setup.
-
-## License
-This project is for educational purposes and follows the applicable licensing terms of the dataset used.

@@ -58,7 +58,7 @@ Each folder contains its own training and testing scripts. The instructions for 
   ```
 - Modify paths in the scripts if your dataset is located in a different directory.
 - The training and testing scripts in all four folders (`early_fusion`, `late_fusion`, `3d_cnn`, `cnn_rnn`) follow the same structure and commands.
-
+- Run the python codes directly from root dir. If you run by moving to the folder that the code is placed, you will run into issues with the other relative directories. In that case you will be better off with using the absolute paths in the code arguments while running.
 ---
 
 ## Output

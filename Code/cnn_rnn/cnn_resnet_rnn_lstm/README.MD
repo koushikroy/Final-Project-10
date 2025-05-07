@@ -75,4 +75,3 @@ python test.py --data_root "dataset" --model_path "Code/cnn_rnn/cnn_resnet_rnn_l
   pip install -r requirements.txt
   ```
 - Modify paths in the scripts if your dataset is located in a different directory.
-```
