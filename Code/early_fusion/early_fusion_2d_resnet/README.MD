@@ -1,37 +1,77 @@
+# Early Fusion 2D ResNet for Video Classification
 
-# Train early fusion frames 6
-python Code\early_fusion\early_fusion_2d_resnet\train.py --data_root "D:\research\deep_learning\Final-Project-10\dataset" --num_frames 6 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_6\no_augment"
+---
 
-# Test early fusion frames 6
-python Code\early_fusion\early_fusion_2d_resnet\test.py  --data_root "D:\research\deep_learning\Final-Project-10\dataset" --model_path "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_6\no_augment\best_model.pth" --num_frames 6 --batch_size 16 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_6\no_augment"
+## Description
+This project implements an Early Fusion 2D ResNet model for video classification. The model processes video frames as input and predicts the corresponding class. The dataset consists of extracted frames from videos, organized into `train`, `val`, and `test` splits.
 
-# Train early fusion frames 6 --augment
-python Code\early_fusion\early_fusion_2d_resnet\train.py --data_root "D:\research\deep_learning\Final-Project-10\dataset" --num_frames 6 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_6\augment" --augment
+---
 
-# Test early fusion frames 6 --augment
-python Code\early_fusion\early_fusion_2d_resnet\test.py  --data_root "D:\research\deep_learning\Final-Project-10\dataset" --model_path "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_6\augment\best_model.pth" --num_frames 6 --batch_size 16 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_6\augment"
+## Overview
+The project includes the following functionalities:
+1. **Training**: Train the Early Fusion 2D ResNet model on the extracted frames dataset.
+2. **Testing**: Evaluate the trained model on the test set and generate metrics such as accuracy and confusion matrix.
+3. **Results**: Save the best model, training logs, and visualizations (e.g., accuracy/loss curves, confusion matrix).
 
-# Train early fusion frames 10
-python Code\early_fusion\early_fusion_2d_resnet\train.py --data_root "D:\research\deep_learning\Final-Project-10\dataset" --num_frames 10 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_10\no_augment"
+---
 
-# Test early fusion frames 10
-python Code\early_fusion\early_fusion_2d_resnet\test.py  --data_root "D:\research\deep_learning\Final-Project-10\dataset" --model_path "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_10\no_augment\best_model.pth" --num_frames 10 --batch_size 16 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_10\no_augment"
+## Dataset Structure
+Ensure the dataset is organized as follows:
+```
+dataset/
+├── train/
+├── val/
+└── test/
+```
 
-# Train early fusion frames 10 --augment
-python Code\early_fusion\early_fusion_2d_resnet\train.py --data_root "D:\research\deep_learning\Final-Project-10\dataset" --num_frames 10 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_10\augment" --augment
+Each split contains subfolders for each class, and each class folder contains subfolders with extracted frames for each video.
 
-# Test early fusion frames 10 --augment
-python Code\early_fusion\early_fusion_2d_resnet\test.py  --data_root "D:\research\deep_learning\Final-Project-10\dataset" --model_path "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_10\augment\best_model.pth" --num_frames 10 --batch_size 16 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_10\augment"
+---
 
+## How to Run
 
-# Train early fusion frames 16
-python Code\early_fusion\early_fusion_2d_resnet\train.py --data_root "D:\research\deep_learning\Final-Project-10\dataset" --num_frames 16 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_16\no_augment"
+### Train the Model
+Run the training script with the following command:
+```bash
+python train.py --data_root "dataset" --num_frames 10 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "Code/early_fusion/early_fusion_2d_resnet/results/frames_10/augment" --augment
+```
+- `--data_root`: Path to the dataset directory.
+- `--num_frames`: Number of frames to use per video.
+- `--epochs`: Maximum number of training epochs.
+- `--patience`: Early stopping patience.
+- `--batch_size`: Batch size for training.
+- `--num_workers`: Number of workers for data loading.
+- `--out_dir`: Directory to save the results.
+- `--augment`: Enable data augmentation during training.
 
-# Test early fusion frames 16
-python Code\early_fusion\early_fusion_2d_resnet\test.py  --data_root "D:\research\deep_learning\Final-Project-10\dataset" --model_path "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_16\no_augment\best_model.pth" --num_frames 16 --batch_size 16 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_16\no_augment"
+### Test the Model
+After training, run the testing script with the following command:
+```bash
+python test.py --data_root "dataset" --model_path "Code/early_fusion/early_fusion_2d_resnet/results/frames_10/augment/best_model.pth" --num_frames 10 --batch_size 16 --out_dir "Code/early_fusion/early_fusion_2d_resnet/results/frames_10/augment"
+```
+- `--data_root`: Path to the dataset directory.
+- `--model_path`: Path to the saved model file from training.
+- `--num_frames`: Number of frames to use per video.
+- `--batch_size`: Batch size for testing.
+- `--out_dir`: Directory to save the results.
 
-# Train early fusion frames 16 --augment
-python Code\early_fusion\early_fusion_2d_resnet\train.py --data_root "D:\research\deep_learning\Final-Project-10\dataset" --num_frames 16 --epochs 100 --patience 20 --batch_size 16 --num_workers 0 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_16\augment" --augment
+---
 
-# Test early fusion frames 16 --augment
-python Code\early_fusion\early_fusion_2d_resnet\test.py  --data_root "D:\research\deep_learning\Final-Project-10\dataset" --model_path "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_16\augment\best_model.pth" --num_frames 16 --batch_size 16 --out_dir "D:\research\deep_learning\Final-Project-10\Code\early_fusion\early_fusion_2d_resnet\results\frames_16\augment"
+## Output
+- **Training**:
+  - Best model: `best_model.pth`
+  - Training logs: `log_train.txt`
+  - Accuracy and loss curves: `acc_curve.png`, `loss_curve.png`
+- **Testing**:
+  - Test logs: `log_test.txt`
+  - Confusion matrix: `confusion_matrix.png`
+  - Class-wise accuracy: `class_accuracy.png`
+
+---
+
+## Notes
+- Ensure all dependencies are installed before running the scripts. Use the following command to install required Python packages:
+  ```bash
+  pip install -r requirements.txt
+  ```
+- Modify paths in the scripts if your dataset is located in a different directory.
