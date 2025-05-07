@@ -1,13 +1,13 @@
 # Final-Project-10
 Final project for Deep Learning course (OSU)
 
-This project involves training and testing deep learning models on an extracted frames dataset. The dataset has been preprocessed, and 16 frames per clip are saved as zipped files. Users need to unzip the dataset and then run the training and testing scripts.
+This project explores visual-only emotion recognition in videos using deep neural network architectures. Leveraging the RAVDESS dataset, it implements several models, including early fusion, late fusion, 3D convolutional networks, and CNN–RNN hybrids, to compare their performance and analyze the impact of temporal modeling, data augmentation, and hyperparameter choices. The dataset has been preprocessed, with 16 frames per clip saved as zipped files. Users are required to unzip the dataset and then run the provided training and testing scripts to evaluate the models.
 
 ---
 
 ## Dataset Preparation
 The extracted frames dataset is provided as zipped files. To use the dataset:
-1. Unzip the dataset into the desired directory. Run the following codes separately from the project root directory.
+1. Unzip the dataset into the desired directory. Run the following codes (from the project root directory).
    ```bash
    python Code\utils\unzip.py dataset_zipped\train -o dataset\train 
    python Code\utils\unzip.py dataset_zipped\test -o dataset\test 
